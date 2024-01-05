@@ -1,0 +1,172 @@
+body {
+	font-family: Arial;
+	color: #2b2424;
+	padding-top: 200px;
+	box-sizing: border-box;
+	background-color: rgb(243, 245, 247);
+}
+
+header {
+	background:rgb(104, 27, 27);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 160px;
+}
+
+header h1 {
+	text-align: center;
+	color: white;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.animals {
+	display: flex;
+	flex-direction: column;
+}
+
+.desc {
+	max-width: 500px;
+}
+
+.img-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 45px;
+}
+
+img {	
+	max-width: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+section {
+	width: 95%;
+	margin: 0 auto 150px auto;
+	padding: 25px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+}
+
+/*************** Navigation Styles ***************/
+header nav {
+	width: 95%;
+	margin: auto;
+}
+
+header nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	width: 20%;
+	box-sizing: border-box;
+	border-left: 2px solid #666;
+}
+
+header nav ul li:first-of-type{
+	border-left: none;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px;
+	background: #443e3e;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+}
+
+
+.selected {
+	background: rgb(246, 246, 248);
+	color: black;
+	transition: all 1s;
+}
+
+section {
+	background-color: #fff;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	height: 160px;
+	background:rgb(104, 27, 27);
+}
+
+
+@media only screen and (min-width: 700px) {
+	
+	/*************** Frist Section Styles ***************/
+	#first article {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	#first article img {
+		margin-left: 25px;
+	}
+	
+	/*************** Second Section Styles ***************/
+	#second div, #fifth div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#second article {
+		width: 30%;
+	}
+
+	/*************** Third Section Styles ***************/
+	#third article {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#third article img {
+		margin-right: 25px;
+	}
+
+	/*************** Fourth Section Styles********************/
+
+	#fourth article {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/*************** Fifth Section Styles ***************/
+	#fifth article {
+		width: 47%;
+	}
+
+	#fifth {
+		margin-bottom: 500px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	section, header nav footer{
+		width: 960px;
+	}
+}
+
+
+
